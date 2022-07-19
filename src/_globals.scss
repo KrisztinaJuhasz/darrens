@@ -1,0 +1,18 @@
+@mixin reset() {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+@mixin antialias() {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$color-white: #CCCCCC;
+$color-light: #666666;
+$color-dark: #1A2031;
+$color-purple: #8A2BE2;
+$color-pink: #FF1493;
+$color-green: #7FFF00;

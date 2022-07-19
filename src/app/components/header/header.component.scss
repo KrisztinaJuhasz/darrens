@@ -1,0 +1,32 @@
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.content-wrapper {
+    width: 30%;
+    margin-left: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .content-wrapper {
+        width: 60%;
+        margin-left: unset;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .content-wrapper {
+        width: 90%;
+    }
+}

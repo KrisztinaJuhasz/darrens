@@ -1,0 +1,13 @@
+<div>
+    <a
+        #anchor
+        routerLink="{{ link }}"
+        (mouseenter)="showLine()"
+        (mouseleave)="hideLine()"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{exact: true}"
+    >{{ name | uppercase }}</a>
+    <svg>
+        <line #line x1="0" y1="5" x2="0" y2="5" />
+    </svg>
+</div>

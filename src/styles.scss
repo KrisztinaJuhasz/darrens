@@ -1,0 +1,55 @@
+@use 'globals' as g;
+
+body {
+    @include g.reset();
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, rgb(26, 32, 49) 30%, rgb(28, 32, 40) 100%);
+    overflow-x: hidden;
+
+    * {
+        @include g.reset();
+        @include g.antialias();
+        color: g.$color-white;
+    }
+
+    span, strong {
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.content-wrapper {
+    main {
+        width: 100%;
+        text-align: justify;
+        line-height: 2rem;
+        margin: auto 0px;
+
+        h1 {
+            margin-bottom: 1rem;
+
+            &.no-margin {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.color-green {
+    color: g.$color-green;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background: radial-gradient(circle, rgb(26, 32, 49) 70%, rgb(28, 32, 40) 100%);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background: radial-gradient(circle, rgb(26, 32, 49) 10%, rgb(28, 32, 40) 100%);
+    }
+}
